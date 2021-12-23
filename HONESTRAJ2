@@ -1,0 +1,85 @@
+                                                                              Day 2 assessment
+
+
+                                                         Q1, Write the key differneces between browser js and nodejs
+
+               
+                                                        Browser js                                 Nodejs
+
+                                         * Javascript is a programing language               * Nodejs is a javascript runtime 
+                                           that is used for writing scripts on                 enviroinment           
+                                           website
+
+                                         * Javascript can only be run in websites            * We can run javascript outside of
+                                                                                               browsers with the help of Nodejs
+
+  
+                                         * It is basically used on client-side               * It is mostly used on server-side
+
+                                         * We can add HTML and play with DOM                 * Nodejs doesn't have capability to 
+                                                                                               add HTML tags
+
+                                         * Javascript is used in frontend                    * Nodejs is used in serverside
+                                           development                                         development
+                          ----------------------------------------------------------------------------------------------------------------------
+
+                                                         Q2,points from video
+
+                                         * Parsing HTML
+ 
+                                           ^ HTML is forgiving by nature
+                                            
+                                           ^ Parsing isnt straight forward
+
+                                           ^ Can be halted
+
+                                           ^ Will do speculative halting
+            
+                                           ^ Its reentrant
+
+                                         * FORGIVING NATURE OF HTML
+
+                                            - Even if our code is wrong, our code will run but output might change
+
+                                         * PARSING ISNT STRAIGHT FORWARD
+
+                                            - Parsing means analyzing and converting a program into a internal format that runtime enviroinment can actually run
+
+                                            - Network----Tokeniser 1 -----tree construction 2 ------ DOM. there is a  separate interaction between 1 and Script execution
+                                              and Script execution to 2
+
+                                         * CAN BE HALTED
+
+                                            - Will halt the parser as a script can alter the document
+
+                                               -> Network latency
+
+                                               -> link & style could halt js execution
+
+                                         * Speculative Parsing
+                             
+                                             - Will look ahead
+
+                                             - External images,scripts,css
+
+                                         * ITS RE-ENTRANT
+
+                                             - At its simplest a re-entrant parser doesnt use global variables and thus can have multiple instances active at the same time
+
+                                      ---------------------------------------------------------------------------------------
+
+                                                                     Q3, Code execution
+
+                                                              1) typeof (1)          = number
+                                                              2) typeof (1.1)        = number
+                                                              3) typeof ("1.1")      = string
+                                                              4) typeof (true)       = boolean
+                                                              5) typeof (null)       = object
+                                                              6) typeof(undefined)   = undefined
+                                                              7) typeof([])          = object
+                                                              8) typeof({})          = object
+                                                              9) typeof(NaN)         = number
+   
+                                               #########################################################################3
+
+
